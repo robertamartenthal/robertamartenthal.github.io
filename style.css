@@ -1,0 +1,315 @@
+/* Configurações globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Times New Roman", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fdfdfd;
+}
+
+/* Cabeçalho e Navegação */
+header {
+  background: #f4f4f4;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.menu {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 999; 
+  padding: 15px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  height: 20%;
+  width: 20%;
+}
+
+/* Icone Menu – responsivo */
+.icone-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+.icone-menu span {
+  height: 3px;
+  width: 25px;
+  background: #333;
+  margin-bottom: 4px;
+  border-radius: 3px;
+}
+
+/* Menu Links */
+.menu-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.menu-links li {
+  margin: 0 1rem;
+}
+
+.menu-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.menu-links a:hover {
+  color: #5d06bb;
+}
+
+/* Seções Gerais */
+section {
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #5d06bb;
+  margin: 0.5rem auto;
+}
+
+.section-description {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+
+/* Seção Home */
+.home {
+  height: 96vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  max-width: none;
+  background-image: url(imagem-código.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.home::after {
+  /* Overlay para melhor contraste */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.home-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin-left: 10%;
+}
+
+.home-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.home-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.description-home {
+    font-family: 'DM Serif Text', serif;
+    font-size: 4rem;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5); /* sombra suave */
+    background: linear-gradient(to right, #4f46e5, #9333ea); /* degrade como plano de fundo da letra */
+    margin-top: 100px;
+}
+
+/* Botões */
+.cta-button {
+  background: linear-gradient(135deg, #5d06bb, #450b84);
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  border: 1px solid transparent;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+}
+
+/* Botão Download CV – override para melhor contraste */
+.download-cv .cta-button {
+  background: linear-gradient(135deg, #28a745, #218838);
+  border-color: #28a745;
+}
+
+/* Seção Projeto */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.project {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+.project h3 {
+  margin-bottom: 0.75rem;
+}
+
+.project p {
+  margin-bottom: 1rem;
+}
+
+.project a {
+  text-decoration: none;
+  color: #5d06bb;
+  font-weight: 600;
+}
+
+/* Seção Sobre Mim */
+.sobre-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.sobre-content > div {
+  width: 100%;
+  max-width: 800px;
+}
+
+.sobre-content h3 {
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+.sobre-content ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  color: #555;
+}
+
+/* Centraliza o botão de Download do Currículo */
+.download-cv {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+/* Seção Contato */
+.contact-info {
+  text-align: center;
+  line-height: 1.8;
+}
+
+.contact-info a {
+  color:#5d06bb;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.contato-links {
+    display: flex;
+    justify-content: center;
+}
+
+/* Rodapé */
+footer {
+  background: #f4f4f4;
+  text-align: center;
+  padding: 1rem 2rem;
+  border-top: 1px solid #ccc;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .icone-menu {
+    display: flex;
+  }
+
+  .menu-links {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    text-align: center;
+    background: #f4f4f4;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 1rem 0;
+    z-index: 9999;
+  }
+
+  .menu-links li {
+    margin: 0.75rem 0;
+  }
+
+  .home {
+    height: 50vh;
+  }
+}
+
+
