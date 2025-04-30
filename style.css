@@ -14,7 +14,7 @@ body {
 
 /* Cabeçalho e Navegação */
 header {
-  background: #f4f4f4;
+  background: #fbfee5;
   padding: 1rem 2rem;
   border-bottom: 1px solid #ccc;
 }
@@ -28,7 +28,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #ffffff;
+  background-color: #fafaf6;
   z-index: 999; 
   padding: 15px 20px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
@@ -76,7 +76,7 @@ header {
 }
 
 .menu-links a:hover {
-  color: #5d06bb;
+  color: #bd0a41;
 }
 
 /* Seções Gerais */
@@ -103,7 +103,7 @@ h2::after {
   display: block;
   width: 60px;
   height: 3px;
-  background: #5d06bb;
+  background: #bd0a41;
   margin: 0.5rem auto;
 }
 
@@ -123,7 +123,7 @@ h2::after {
   color: #fff;
   position: relative;
   max-width: none;
-  background-image: url(imagem-código.jpg);
+  background-image: url(imagem-codigo.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -164,13 +164,13 @@ h2::after {
     color: #fff;
     text-align: center;
     text-shadow: 0 0 10px rgba(0,0,0,0.5); /* sombra suave */
-    background: linear-gradient(to right, #4f46e5, #9333ea); /* degrade como plano de fundo da letra */
+    background: linear-gradient(to right, #c91842, #bd0a41); /* degrade como plano de fundo da letra */
     margin-top: 100px;
 }
 
 /* Botões */
 .cta-button {
-  background: linear-gradient(135deg, #5d06bb, #450b84);
+  background: linear-gradient(135deg, #c91842, #a40b54);
   color: #fff;
   padding: 0.8rem 1.5rem;
   text-decoration: none;
@@ -222,7 +222,7 @@ h2::after {
 
 .project a {
   text-decoration: none;
-  color: #5d06bb;
+  color: #bd0a41;
   font-weight: 600;
 }
 
@@ -263,7 +263,7 @@ h2::after {
 }
 
 .contact-info a {
-  color:#5d06bb;
+  color:#bd0a41;
   text-decoration: none;
 }
 
